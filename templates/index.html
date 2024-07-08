@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>DiabetesPred</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Diabetes Prediction Model</h1>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <!--<li><a href="{{ url_for('login') }}">Login</a></li>-->
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('prediction') }}">Prediction</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+      
+        <section id="Model">
+            <h2>Welcome</h2>
+            <p>The Diabetes Prediction Model helps predict the likelihood 
+                of an individual developing diabetes 
+                based on various health parameters
+            </p>
+          
+              
+        </section>
+        
+    </div>
+
+    <footer>
+        Copyright by Ryan&Scott Foundation
+    </footer>
+
+    
+</body>
+
+</html>

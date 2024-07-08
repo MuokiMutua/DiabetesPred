@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 100px; /* To ensure content doesn't overlap with navbar */
+    padding-bottom: 100px; /* To ensure footer doesn't overlap content */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0; /* Increased padding for a bigger navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav h1 {
+    font-size: 28px; /* Increased font size */
+    margin-left: 20px; /* Adjust as needed */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px; /* Increased margin */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Increased font size */
+}
+
+header nav ul li a:hover {
+    color: #512da8;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 22px;
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #4CAF50;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

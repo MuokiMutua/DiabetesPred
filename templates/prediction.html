@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Prediction Page</title>
+    <link rel="stylesheet" href="/static/prediction.css">
+</head>
+<body>
+    <nav>
+        <h1>Diabetes Prediction Model</h1>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Logout</a></li>
+        
+        </ul>
+    </nav>
+    
+    <h1>Prediction Page</h1>
+
+    {% if prediction_message %}
+    <p style="font-weight: bold;">{{ prediction_message }}</p>
+    {% endif %}
+
+    <form action="/prediction" method="POST">
+        <p>Test the patient and then enter the Test inputs</p>
+        <ul>
+            <li>
+                <input type="text" id="patient_id" name="patient_id" placeholder="Patient ID" required>
+            </li>
+
+            <li>
+                <input type="number" id="pregnancies" name="pregnancies" placeholder="Number of pregnancies" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="glucose" name="glucose" placeholder="Glucose level" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="BP" name="BP" placeholder="Blood Pressure" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="ST" name="ST" placeholder="Skin Thickness" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="insulin" name="insulin" placeholder="Insulin levels" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="BMI" name="BMI" placeholder="BMI" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="DPF" name="DPF" placeholder="Diabetes Pedigree Function" step="any" required>
+            </li>
+
+            <li>
+                <input type="number" id="age" name="age" placeholder="Age" step="any" required>
+            </li>
+        </ul>
+
+        <div class="button-container">
+            <input type="submit" value="Predict">
+    
+        </div>
+    </form>
+
+    <p>Result: {{ result2 }}</p>
+
+    <footer>
+        Copyright by Ryan&Scott Foundation
+    </footer>
+</body>
+</html>

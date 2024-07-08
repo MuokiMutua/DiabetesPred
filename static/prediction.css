@@ -1,0 +1,138 @@
+/* prediction.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 100px; /* To ensure content doesn't overlap with navbar */
+    padding-bottom: 100px; /* To ensure footer doesn't overlap content */
+}
+
+nav {
+    background-color: white;
+    color: white;
+    width: 100%;
+    padding: 10px 20px; /* Adjusted padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px; /* Adjusted font size */
+    margin: 0; /* Remove margin to align to the left */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: auto; /* Pushes "Home" link to the left */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px; /* Adjusted font size */
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #512da8;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #512da8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5c6bc0;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 12px;
+    background-color: #4CAF50;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
