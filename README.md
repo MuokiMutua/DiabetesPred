@@ -1,27 +1,30 @@
 # Diabetes Prediction System
 
 ## Introduction
-The project aims to analyze an existing diabetes dataset. 
-The dataset contains various columns and records, and our goal is to 
-determine if a patient had diabetes or not based on this data. 
-Using the insights gained from this analysis, we will develop an algorithm 
-that can take new patient data and predict the likelihood of diabetes. 
-This tool could be very useful for early diagnosis and 
-better management of the disease.
+This project aims to analyze an existing diabetes dataset to determine if a patient has diabetes based on various health metrics. 
+Using insights gained from this analysis, 
+we've developed an algorithm that can take new patient data and predict the likelihood of diabetes.
+This tool could be very useful for early diagnosis and better management of the disease.
 
 ## Objectives
-1. Create a user friendly user interface
-2. Create a diabetes outcome algorithm
+* Create a user-friendly interface for data input and result display
+* Develop and implement a diabetes prediction algorithm
 
 ## The Data
-Used data sourced from Kaggle 
+Used data sourced from Kaggle. This dataset was originally made available for diabetes prediction research. We've adapted it for our specific use case to demonstrate how early detection can be achieved using similar patient data. Our goal is to showcase the effectiveness of our method in early diabetes detection by carefully aligning our approach with this established dataset.
 https://www.kaggle.com/datasets/saurabh00007/diabetescsv
 
-For a diabetes prediction research, the dataset was originally made available. 
-To illustrate how early detection can be accomplished using comparable patient data, 
-we choose to modify it for our particular situation. We want to demonstrate the efficacy 
-of our method in detecting diabetes early on by carefully matching our data 
-to the current dataset.
+## Features
+* User-friendly interface for inputting patient data
+* Advanced machine learning algorithm for diabetes prediction
+* Visualization of prediction results
+* Secure storage of patient information
+
+## How it works
+* Users input patient data through the interface
+* The system processes the data using our prediction algorithm
+* Results are displayed, showing the likelihood of diabetes
+* Users can save and retrieve patient records for future reference
 
 ## Here are some screenshots of the user interface and how it works:
 ![Screenshot 2024-07-04 223703](https://github.com/MuokiMutua/DiabetesPred/assets/172933867/d90152ac-9224-4a77-b3a9-d71a676f8747)
